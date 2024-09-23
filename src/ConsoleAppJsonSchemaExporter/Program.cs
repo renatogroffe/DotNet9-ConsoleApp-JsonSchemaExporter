@@ -8,6 +8,8 @@ Console.WriteLine($"Versao do .NET em uso: {RuntimeInformation
     .FrameworkDescription} - Ambiente: {Environment.MachineName} - Kernel: {Environment
     .OSVersion.VersionString}");
 
+Console.WriteLine();
+
 Console.WriteLine($"Schema do tipo {nameof(TorneioEsportivo)} no formato JSON:");
 Console.WriteLine(JsonSchemaExporter.GetJsonSchemaAsNode(
     JsonSerializerOptions.Default, typeof(TorneioEsportivo)));
